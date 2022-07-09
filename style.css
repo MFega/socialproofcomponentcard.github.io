@@ -1,0 +1,192 @@
+/* ### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+   
+}
+
+.first-section{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.intro h1{
+font-weight: 700;
+color:hsl(300, 43%, 22%) ;
+font-family: 'League Spartan', sans-serif;
+width: 50%;
+margin: 0 auto;
+line-height: 27px;
+padding-top: 20px;
+}
+
+.intro p{
+    color: hsl(303, 10%, 53%);
+    width: 60%;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 20px 0px 35px 0;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.box{
+    background:hsl(300, 24%, 96%) ;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+margin-bottom: 10px;
+}
+.box img{
+    margin-bottom: 5px;
+}
+.box p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.second-section{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+.item-colton p{
+    color: white; 
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.item-irene p{
+    color: white; 
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.item-anne p{
+    color: white; 
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.item{
+    background:hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px 0px;
+
+}
+.image-name{
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header-image img{
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+
+.header{
+    margin-left: 15px;
+}
+.header h4{
+    color: white;
+    font-size: 15px;
+}
+.header p{
+    font-size: 15px;
+    color:hsl(333, 80%, 67%);
+    font-weight: 500;
+}
+
+@media only screen and (min-width:768px){
+    .card{
+        width: 1500px;
+        margin: 30px;
+        padding: 30px; 
+    }
+
+    .first-section{
+        width: 1000px;
+    }
+    .second-section{
+        width: 900px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 15px;
+    }
+
+    .container-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .intro h1{
+        width: 50%;
+        text-align: left;
+        transform: translateX(-75px);
+    }
+    .intro p{
+        text-align: left;
+        margin: auto;
+        width: 70%;
+        transform: translateX(-25px);
+}
+
+.box-3{
+    transform: translateX(48px);
+}
+.box-1{
+    transform: translateX(-48px);
+}
+
+.item-anne{
+    transform: translateY(40px);
+}
+.item-irene{
+    transform: translateY(20px);
+}
+}
